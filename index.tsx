@@ -70,9 +70,7 @@ const App = () => {
         }, 5000);
       }
     };
-    if (!timer && token) {
-      startTime();
-    }
+    startTime();
     const resetTimer = () => {
       if (token) {
         console.log('timer reset');
@@ -82,7 +80,11 @@ const App = () => {
     };
 
     window.addEventListener('keypress', resetTimer);
-    return () => window.removeEventListener('keypress', resetTimer);
+    window.addEventListener('click', resetTimer);
+    return () => {
+      window.removeEventListener('keypress', resetTimer);
+      window.removeEventListener('click', resetTimer);
+    };
   }, [token]);
 
   return (
