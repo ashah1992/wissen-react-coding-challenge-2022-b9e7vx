@@ -1,0 +1,118 @@
+.loginForm {
+  font-family: sans-serif;
+  padding: 50px 50px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.loginForm > img {
+  width: 150px;
+}
+
+.loginForm form > * {
+  margin-top: 20px;
+}
+
+.fullWidthLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: #9195a4;
+  font-weight: 500;
+}
+
+.fullWidthLabel + input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #9195a4;
+  font-size: 1.2rem;
+  color: #3b4baf;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.fullWidthLabel + input[type='password'] {
+  padding-right: 40px;
+}
+
+.termsWrapper {
+  color: #9195a4;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.termsWrapper span {
+  margin-left: 5px;
+}
+
+.termsWrapper b {
+  color: black;
+}
+
+.submitButton {
+  background-color: #1b2ca1;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.visiblePassword {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: calc(50% - 2px);
+  cursor: pointer;
+}
+
+.visiblePassword img {
+  width: 25px;
+  height: 25px;
+}
+
+.submitButton:active,
+.submitButton:disabled {
+  background-color: #d1d6ec;
+  color: #1b2ca1;
+}
+
+.infoContainer {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.infoContainer span {
+  display: block;
+  width: 100%;
+  padding: 20px 10px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.infoContainer span.success {
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+.infoContainer span.failure {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.secondaryLoginOption {
+  display: flex;
+  justify-content: center;
+}
+
+.secondaryLoginOption a {
+  text-decoration: none;
+  color: #1b2ca1;
+  font-weight: 600;
+}
